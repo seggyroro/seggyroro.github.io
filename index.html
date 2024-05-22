@@ -1,0 +1,213 @@
+---
+title: Home
+layout: default
+background: '/img/bg-index.jpg'
+---
+
+<!-- Home Intro
+================================================== -->
+{% if page.url == "/" %}
+<div class="rounded hero">
+  <div class="hero-banner">
+    <div class="text-intro">
+      <h1 class="font-weight-bold serif-font">Rohan Sehgal</h1>
+      <!--<div>
+        <div>Entrepreneur</div>
+        <div>Digital Marketer</div>
+        <div>Product Manager</div>
+        <div>Storyteller</div>
+      </div> -->
+      <p class="lead">Entrepreneur, Digital Marketer, Product Manager, Storyteller</p>
+      <a href="{{site.baseurl}}/about" class="btn btn-dark text-white px-5 btn-lg">About me</a>
+    </div>
+
+    <!-- <div class="col-auto"> -->
+    <div class="rounded rohan-img">
+      <img src="{{site.baseurl}}/assets/images/rohan2.png" alt="Profile Picture">
+    </div>
+    <!-- </div> -->
+  </div>
+
+
+  <!-- <div class="col-md-6 text-right pl-0 pl-lg-4">
+      <img class="intro" height="500" src="{{site.baseurl}}/assets/images/rohansehgal.jpg">      
+    </div> -->
+
+
+</div>
+{% endif %}
+
+
+
+<!-- Featured
+================================================== -->
+<section class="row">
+  {% for post in site.posts %}
+  {% if post.featured == true %}
+  <div class="col-md-4 mb-5">
+    {% include postbox.html %}
+  </div>
+  {% endif %}
+  {% endfor %}
+
+
+
+  <!-- <div class="card">
+
+
+    <div class="rounded mb-1 hero-two">
+      <div class="row align-items-center justify-content-between">
+        <div>
+          <p class="lead mb-4 h4 serif-font">{{ post.title }}<p>
+
+
+        </div>
+
+      </div>
+    </div>
+  </div> -->
+
+</section>
+
+<!-- <section class="row">
+  
+
+  <div class="card">
+
+
+    <div class="rounded mb-1 hero-two">
+      <div class="row align-items-center justify-content-between">
+        <div>
+          <p class="lead mb-4 h4 serif-font">{{ post.title }}<p>
+
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</section> -->
+
+<!-- Posts List with Sidebar (except featured)
+================================================== -->
+
+<div class="strengths margin">
+  
+  <div class="card2-container" style="text-align: center;">
+      <div class=" card0">
+        <h1 class="font-weight-bold">MY STRENGTHS</h1>
+      </div>
+      <!-- Card 1 -->
+      <div class="strength-card bg-color1 border-left border-raius-none">
+          <span class="material-symbols-outlined icon-size">
+            emoji_people
+          </span>
+        
+        <span>Perseverance</span>
+      </div>
+      <!-- Card 2 -->
+      <div class="strength-card bg-color2">
+        <span class="material-symbols-outlined icon-size">
+          stylus_note
+          </span><span>Attention to Detail</span>
+      </div>
+      <!-- Card 3 -->
+      <div class="strength-card bg-color3">
+        <span class="material-symbols-outlined">
+          stress_management
+        </span>
+        <span>Empathy</span>
+      </div>
+      <!-- Card 4 -->
+      <div class="strength-card bg-color4 border-right border-raius-none">
+        <span class="material-symbols-outlined">
+          cognition
+        </span>
+        <span>Critical Thinking</span>
+      </div>
+  </div>
+</div>
+
+
+
+
+<!-- Blockquote section -->
+<div class="">
+  <div class="quote-section">
+    <!-- <div class="col-auto"> -->
+    <div class="rounded-img quote-img">
+      <img src="{{site.baseurl}}/assets/images/rohan-quote.png" alt="Rohan Quote Image">
+    </div>
+    <!-- </div> -->
+    <div class="quote">
+      <blockquote class="quote">
+        Learning by doing is the best learning.
+        <cite>Seggy Roro</cite>
+        <!-- <a href="{{site.baseurl}}/about" class="btn btn-dark text-white px-5 btn-lg">About me</a> -->
+      </blockquote>
+    </div>
+  </div>
+</div>
+
+<br>
+<div class="heading-wrap">
+  <h1 class="font-weight-bold serif-font">WHAT I DO</h1>
+</div>
+
+<div class="work-section-wrap">
+  <div class="work-section-main">
+    <div class="work-description">
+      
+      <p style="color: black;size: 10px;">Founder @ My Pahadi Dukan</p>
+      <p style="color: grey;size: 10px;">June 2021 - Present</p>
+      <p class="">Building a premium Himalayan D2C brand which makes natural authentic mountain produce
+        accessible to all.</p>
+      <!-- <a href="{{site.baseurl}}/about" class="btn btn-dark text-white px-5 btn-lg">About me</a> -->
+    </div>
+
+    <!-- <div class="col-auto"> -->
+    <div class="text-right">
+      <img src="{{site.baseurl}}/assets/images/brand.jpg" alt="Brand My Pahadi Dukan">
+    </div>
+    <!-- </div> -->
+  </div>
+</div>
+
+<div class="heading-wrap">
+  <h1 class="font-weight-bold serif-font">EDUCATION</h1>
+</div>
+
+<div class="work-section-wrap">
+  <div class="work-section-main">
+    <!-- <div class="col-auto"> -->
+    
+    <div class="work-description">
+      <p style="color: black;size: 14px;">Naropa Fellowship</p>
+      <p style="color: grey;size: 10px;">Postgraduate Programme in Entrepreneurial Leadership -
+        <span class="font-weight-bold">2021</span></p>
+      <p class="lead font-weight-bold">Ladakh</p>
+    </div>
+    <div class="logo-img">
+      <img src="{{site.baseurl}}/assets/images/naropa.png" alt="Education-Naropa">
+    </div>
+    <!-- </div> -->
+  </div>
+</div>
+
+<div class="work-section-wrap">
+  <div class="work-section-main">
+    <!-- <div class="col-auto"> -->
+    
+    <div class="work-description">
+      <p style="color: black;size: 14px;">Indian Institute of Information Technology Design and Manufacturing</p>
+      <p style="color: grey;size: 10px;">B.Tech Mechanical Engineering with specialization in
+        Design and Manufacturing - <span class="font-weight-bold">2019</span></p>
+      <p class="lead font-weight-bold">Chennai</p>
+    </div>
+    <div class="logo-img">
+      <img src="{{site.baseurl}}/assets/images/college.png" alt="Education-Naropa">
+    </div>
+    <!-- </div> -->
+  </div>
+</div>

@@ -1,0 +1,439 @@
+/* 
+Don't want to use sass and simply modify the stylesheet in the old css fashion? 
+Just customize your theme here.
+================================================== */
+
+body {}
+
+/* Utility classes */
+.margin{
+    margin: 5rem 0;
+}
+
+.flex-column{
+    flex-direction: column;
+}
+
+.full-width{
+    flex-basis:100%;
+}
+
+.rounded-img img{
+    border-radius: 0.25rem;
+}
+/* Utility classes end  */
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 30
+}
+
+.heading-wrap{
+    margin: 5rem 0;
+}
+@media screen and (max-width:700px){
+    .heading-wrap{
+        margin: 2rem 0;
+    }
+}
+
+
+/* hero banner */
+.hero-banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.rohan-img{
+    border-radius: 0.25rem;
+}
+
+.rohan-img img{
+    transform: scale(0.80);
+    border-radius: 0.25rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    min-width: 300px;
+    
+}
+
+.text-intro{
+    overflow: hidden;
+}
+
+/* strengths cards styling */
+.bg-color1{
+    background-color: #90ADC6;
+}
+.bg-color2{
+    background-color: #93a3c2;
+}
+.bg-color3{
+    background-color: #FAD02C;
+}
+.bg-color4{
+    background-color: #10aec6;
+}
+
+.border-right{
+    border-radius: 0 0.25rem 0.25rem 0;
+}
+.border-left{
+    border-radius: 0.25rem 0 0 0.25rem;
+}
+
+.card2-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;    
+    align-items: center;
+    flex-grow: 1;    
+  }
+
+  .card2-container > *{
+    flex-basis: 100%;
+    
+  }
+  
+  /* Individual card styles */
+.card0{   /* My strengths heading container */
+    /* // flex-grow: 1;
+    // min-width: 250px; */
+    padding:15px;
+    display: flex;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.strength-card {
+    
+    /* // flex-grow: 1;
+    // min-width: 250px; */
+    min-height: 125px;
+    /* Default background color */
+    padding:15px;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+/* Hover effect */
+.bg-color1:hover {
+background-color: #222; /* New background color on hover */
+}
+.bg-color2:hover {
+background-color: #222; /* New background color on hover */
+}
+.bg-color3:hover {
+background-color: #222; /* New background color on hover */
+}
+.bg-color4:hover {
+background-color: #222; /* New background color on hover */
+}
+
+
+
+.heading-wrap{
+    flex-grow: 1;
+}
+
+.strengths{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.icon-size{
+    font-size: 4rem;
+}
+
+/* BLOCKQUOTE begins */
+.quote-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.quote-img{
+    max-width: 600px;
+   
+    border-radius: 0.25rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+
+.quote{
+    display: flex;
+    /* flex-direction: column; */
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+blockquote {
+    font-family: Georgia, serif;
+    font-size: 26px;
+    font-style: italic;
+    max-width: 500px;
+    margin: 0.25em 0;
+    padding: 0.35em 0 0.35em 20px;
+    line-height: 1.45;
+    position: relative;
+    color: #383838;
+    border-left: none;
+    }
+    
+    blockquote:before {
+    display: block;
+    padding-left: 10px;
+    content: "\201C";
+    font-size: 80px;
+    position: absolute;
+    left: -30px;
+    top: -30px;
+    color: #7a7a7a;
+    }
+    
+    blockquote cite {
+    color: #999999;
+    font-size: 14px;
+    display: block;
+    margin-top: 5px;
+    }
+     
+    blockquote cite:before {
+    content: "\2014 \2009";
+    }
+    
+    .circluar-img img{
+        transform: scale(0.80);
+        border-radius: 0.25rem;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    /* BLOCKQUOTE ends */
+
+    
+    /* WORK SECTION BEGINS */
+    .logo-img{
+        display: flex;
+        justify-content: center;
+        
+    }
+    .logo-img img{
+        
+    }
+
+    .work-section-wrap{
+        margin:5rem 0;
+    }
+    .work-section-main{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        /* flex-direction: row; */
+    }
+    .work-description{
+        width:50%;
+        padding: 0 2rem 0 0;
+        border-right: 2px solid #222;
+    }
+
+    /* HEADER STYLES */
+
+    .navigation-wrap{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    .header-wrap{
+        
+        display:flex;
+        max-width: 1340px;
+        width: 100%;
+        align-items: center;
+        
+
+    }
+    
+    .header-items-wrap{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        
+    }
+    .header-sections{
+        width: 100%;
+    }
+    .menu-items{
+        margin-bottom: 0;
+        list-style: none;
+        
+    }
+    .social-icons{
+        align-items: center;
+        
+    }
+    .small-icons .social-icon svg {
+        width: 18px;
+        height: 18px;
+    }
+    
+
+@media screen and (max-width: 700px){
+    .start-header{
+            padding:0px;
+        }
+    .header-items-wrap{
+        flex-direction: column;
+    }
+    .header-wrap{
+        justify-content: center;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+    .menu-items{
+
+        padding: 25px 25px 0 25px;
+        margin-bottom: 0;
+        list-style: none;
+        justify-content: center;
+        align-items: center;
+    }
+    .social-icons{
+        align-items: center;
+        justify-content: center;
+        margin-top: -30px;
+    }
+    .small-icons .social-icon svg {
+        width: 15px;
+        height: 15px;
+    }
+          
+    .small-icons .social-icon {
+        margin: 0 5px; /* Adjust spacing as needed */
+    }
+    .small-icons span{
+            padding: 5px 2px 2px 2px;
+            align-items: center;
+        }
+    .header-sections{
+        display: flex;
+        justify-content: center;
+    }
+}
+   
+   
+
+@media screen and (max-width: 700px){
+    /* Restting the padding in mobile */
+    .container-xl, .container-lg, .container-md, .container-sm, .container {
+        padding:0 0;
+    }
+
+    /* hero banner styling */
+    .hero{
+        width: 100%;
+    }
+    .hero-banner{
+        flex-direction: column;
+        
+    }
+    .text-intro{
+        margin-top: 25px;
+        padding-top: 20px;
+        order:2;
+        text-align: center;
+        border-top: #383838 solid 1px;
+    }
+    .text-intro h1{
+        font-size: 1.6rem;
+        
+    }
+    .text-intro p{
+        font-size: 1rem;
+    }
+    .rohan-img img{
+        
+    }
+    .rohan-img{
+        margin-top: -25px;
+        flex-grow: 2;
+    }
+
+    /* strengths section styling */
+    
+    /* strength wrapper */
+    .card2-container > *{
+        flex-basis: 50%;
+    }
+
+    .card2-container {
+        flex-direction: none;
+        flex-wrap:wrap;
+        flex-basis: 100%;
+
+    }
+    /* strength cards */
+    .strength-card{
+        width: 50%;
+        
+    }
+
+    .card0{
+        /* width: 100%;
+        text-align: center; */
+    }
+    .border-raius-none{
+        border-radius: 0;
+    }
+    /* strength cards end */
+
+    /* quotes section */
+    .quote-section{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .quote{
+        margin-top: 2rem;
+        justify-content: center;
+        padding: 0 20px;
+    }
+    
+    blockquote {
+        
+        max-width: 500px;
+        margin: 0.25em 0;
+        padding: 0.35em 0 0.35em 0;
+        
+    }
+
+    
+
+    /* WORK description */
+    
+    .work-section-main{
+        flex-direction: column;
+    }
+
+    .work-description{
+        width: 100%;
+        border: none;
+        padding: 0;
+    }
+    .logo-img img{
+        width: 100%;
+    }
+}
